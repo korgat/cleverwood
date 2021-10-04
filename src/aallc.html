@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Components</title>
+    <meta name="description" content="Description text">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .page { padding: 50px 0; } .c-container { margin: 0 auto; padding: 0 15px; max-width: 900px; } .c-group { margin-bottom: 60px; } .c-group::before { content: attr(data-title); color: #aaa; font-weight: 700; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #ccc; text-transform: uppercase; display: block; } hr { border: none; height: 1px; background-color: #eee; }
+    </style>
+
+</head>
+<body class="page">
+
+<main class="main">
+    <div class="c-container">
+        @@include('./_libs/_btn.html')
+        @@include('./_libs/_radiocheck.html')
+        @@include('./_libs/_inputs.html')
+        @@include('./_libs/_article.html')
+        <!--@@include('./_libs/_swiper.html')-->
+    </div>
+</main>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

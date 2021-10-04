@@ -1,0 +1,38 @@
+@import "mixins/all";
+@import "_variables";
+@import "helpers/base";
+
+body {
+  font: $base-fontWeight #{$base-fontSize}/#{$base-lineHeight} $base-fontFamily;
+}
+
+@import "_libs/btn";
+@import "_libs/radiocheck";
+@import "_libs/inputs";
+@import "_libs/article";
+@import "_libs/swiper";
+
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  &__header {
+
+  }
+  &__main {
+    flex: 1 1 auto;
+  }
+  &__footer {
+    margin-top: auto;
+  }
+}

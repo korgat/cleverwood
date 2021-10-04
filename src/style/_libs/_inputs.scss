@@ -1,0 +1,64 @@
+$color: $body-color;
+$colorPlaceholder: lighten($color, 0.2);
+$border-color: #999;
+$bg-color: transparent;
+
+$inputHeight: 40px;
+$border-radius: 0;
+$padding-vertical: 14px;
+$padding-horizontal: 15px;
+
+$transition: $btnTransition;
+$focusShadow: 0 0 0 2px rgba($primary, 50%);
+
+.input,
+.textarea {
+  display: inline-block;
+  border: 1px solid $border-color;
+  padding: 0 $padding-horizontal;
+  background-image: none;
+  background-color: $bg-color;
+  box-shadow: none;
+  border-radius: $border-radius;
+  transition: $transition;
+  outline: none;
+  color: $color;
+
+  &:focus {
+    box-shadow: $focusShadow;
+  }
+
+  &::placeholder {
+    color: $colorPlaceholder;
+    opacity: 1;
+  }
+
+  &[disabled] {
+    background-image: none;
+    background-color: $bg-color;
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+
+.input {
+  height: $inputHeight;
+  &_no-arrows {
+    -moz-appearance: textfield;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.textarea {
+  padding-top: $padding-vertical;
+  padding-bottom: $padding-vertical;
+  height: auto;
+  max-width: 100%;
+  &[disabled] {
+    resize: none;
+  }
+}
