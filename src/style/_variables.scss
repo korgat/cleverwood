@@ -2,7 +2,7 @@
 //@include add-font(300, normal,'AktivGroteskCorp', '../fonts/AktivGroteskCorp/AktivGroteskCorp-Light');
 //$font-AktivGroteskCorp: 'AktivGroteskCorp', sans-serif;
 
-$base-fontFamily: 'Roboto', sans-serif;
+$base-fontFamily: "Roboto", sans-serif;
 $base-fontWeight: 400;
 $base-fontSize: 1rem;
 $base-lineHeight: 1.4;
@@ -11,20 +11,23 @@ $base-lineHeight: 1.4;
 $white: #fff;
 $dark: #333;
 
-$red: #FF2F00;
-$yellow: #FFEC42;
-$blue: #4588DA;
-$green: #00AA5B;
+$red: #ff2f00;
+$yellow: #ffec42;
+$blue: #4588da;
+$green: #00aa5b;
 
 // Color for use --------------
-$light: $white;
-$body-bg: $white;
-$body-color: $dark;
+$white: #fff;
+$light: #f4f6f5;
+$gray: #979797;
+$dark: #505050;
+$body-bg: #fff;
+$body-color: #263238;
 
-$primary: $red;
-$second: $blue;
+$primary: #263238;
+$second: #70bb3b;
 $star: $yellow;
-$success: $green;
+$success: #3e9443;
 
 // Link color -------------
 $link: $primary;
@@ -39,7 +42,6 @@ $max-xs: 560px;
 
 // Transition ----------
 $transitionDuration: 0.15s;
-$btnTransition: color $transitionDuration ease-in, background-color $transitionDuration ease-in, border-color $transitionDuration ease-in, box-shadow $transitionDuration ease-in;
-$fadeTransition: opacity $transitionDuration*2 ease-in-out, visibility $transitionDuration*2 ease-in-out;
-
-
+$btnTransition: color $transitionDuration ease-in, background-color $transitionDuration ease-in,
+	border-color $transitionDuration ease-in, box-shadow $transitionDuration ease-in;
+$fadeTransition: opacity $transitionDuration * 2 ease-in-out, visibility $transitionDuration * 2 ease-in-out;

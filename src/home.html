@@ -1,72 +1,454 @@
 <!doctype html>
 <html lang="ru">
 @@include('./__head.html', {'title': 'Головна'})
+
 <body class="page">
 
-@@include('./_header.html')
-<main class="page__main">
+	@@include('./_header.html')
+	<main class="page__main">
+		<section class="main-slider bg-img" style="background-image: url(./images/temp/Zugpsitze_mountain.jpg)">
+			<div class="container">
+				<div class="main-slider__box ">
+					<div class="main-slider__content">
+						<div class="main-slider__title">
+							Не наїбеш не проживеш
+						</div>
+						<div class="main-slider__text">
+							Товари доставляються до наших клієнтів з ніжністю і любов'ю. Ваш
+							комфорт - наш пріорітет.
+						</div>
+						<button class="main-slider__btn btn">
+							Каталог
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <div>
-        <div class="container">перший екран</div>
-    </div>
-    <div>
-        <div class="container">секція Пошук</div>
-    </div>
-    <div>
-        <div class="container">секція Перелік фірм</div>
-    </div>
-    <div>
-        <div class="container">секція Останні поступлення</div>
-    </div>
-    <div>
-        <div class="container">секція Ви перегляди</div>
-    </div>
+		<section class="search">
+			<div class="container">
+				<div class="search__box">
+					<input class="search__input input" type="text" placeholder="Введіть назву товару...">
+					<button class="search__btn btn">Пошук</button>
+				</div>
+			</div>
+		</section>
 
-    <div>
-        <div class="container">
-            <div class="article">
-                <p>Зварювальні електроди — це металеві або неметалеві стрижні, що підводять електричний струм до металу, який
-                    потрібно зварити. Вони використовуються в якості витратного матеріалу для зварювальних інверторів,
-                    трансформаторів і деяких напівавтоматів. На стрижні електродів знаходиться покриття, яке може мати різний
-                    склад. Серед найбільш частих варіантів виділяють основне, рутилове, кисле і целюлозне покриття.</p>
-                <p>Під час зварювання електроди виконують такі функції:</p>
-                <p>подача електрики до деталей, які потрібно з'єднати;</p>
-                <p>підпалювання дуги і управління її положенням;</p>
-                <p>плавлення крайок деталей;</p>
-                <p>створення шва.</p>
-                <p>Покриття електрода може виконувати різні функції:</p>
-                <p>Утворення шлаку навколо металу, що формує шов, а також падаючих зі стрижня електродів крапель.</p>
-                <p>Утворення газу навколо розплавленого металу, захист його від впливу повітря.</p>
-                <p>Легування. У обмазці можуть міститися порошки, які надають шву властивостей, відмінних від властивостей
-                    основного металу.</p>
-                <p>Зв'язування і цементування всіх компонентів, які беруть участь у формуванні шва.</p>
-                <p>Маркування конкретного типу електрода, щоб зварювальник міг швидко знайти необхідний витратник.</p>
-                <p>Переваги зварювальних електродів Dnipro-M</p>
-                <p>Зварювальні електроди, які Ви знайдете в цій категорії, мають рутилово-целюлозне покриття. Їм властиві
-                    наступні переваги:</p>
-                <p>Використання формули компонентів «Invertor+» дозволяє працювати в будь-якому положенні, навіть якщо потрібно
-                    обробляти тонкий матеріал. До того ж, вони можуть використовуватися для роботи в положенні «вертикаль на
-                    спуск».</p>
-                <p>Ви зможете легко запалювати дугу як вперше, так і повторно. Електроди забезпечують її стійкість у широкому
-                    діапазоні струму.</p>
-                <p>Зварювальні електроди Dnipro-M сприяють формуванню якісного шва і легкому відділенню шлаку.</p>
-                <p>Зварювання можна вести за низьких значень струму, живлячи зварювання від побутових джерел живлення.</p>
-                <p>Електроди не потрібно гартувати перед тим, як почати працювати з ними.</p>
-                <p>Вони добре зварюють навіть брудний та іржавий метал.</p>
-                <p>Електроди Dnipro-M для зварювання мають сертифікати, що підтверджують їхню якість:</p>
-                <p>ТÜVRheinland — сертифікат відповідності контролю якості виробництва на заводі.</p>
-                <p>Bureau Veritas Certification — сертифікат відповідності розробки, виробництва і продажу зварювальних
-                    матеріалів.</p>
-                <p>Canadian Welding Bureau — сертифікат відповідності якості зварювальних матеріалів.</p>
-                <p>Сертифікат відповідності директивам Євросоюзу (СЕ).</p>
-            </div>
-        </div>
-    </div>
+		<section class="new-items checked-items">
+			<div class="container">
+				<div class="new-items__inner hecked-items__inner">
+					<div class="new-items__slider">
+						<div class="main-item">
+							<div class="main-item__img bg-img"
+								style="background-image: url(./images/temp/main-item.jpg)">
+							</div>
+							<div class="main-item__content checked-items__content">
+								<div class="main-item__top">
+									<div class="main-item__title">
+										Вязальний апарат
+									</div>
+									<div class="main-item__product-id">
+										Код: 5511/007-04-000
+									</div>
+								</div>
+								<div class="main-item__bottom">
+									<div class="main-item__price">500 грн</div>
+									<button class="main-item__btn btn"></button>
+								</div>
+							</div>
+						</div>
+						<div class="main-item">
+							<div class="main-item__img bg-img"
+								style="background-image: url(./images/temp/main-item.jpg)">
+							</div>
+							<div class="main-item__content checked-items__content">
+								<div class="main-item__top">
+									<div class="main-item__title">
+										Вязальний апарат
+									</div>
+									<div class="main-item__product-id">
+										Код: 5511/007-04-000
+									</div>
+								</div>
+								<div class="main-item__bottom">
+									<div class="main-item__price">500 грн</div>
+									<button class="main-item__btn btn"></button>
+								</div>
+							</div>
+						</div>
+						<div class="main-item">
+							<div class="main-item__img bg-img"
+								style="background-image: url(./images/temp/main-item.jpg)">
+							</div>
+							<div class="main-item__content checked-items__content">
+								<div class="main-item__top">
+									<div class="main-item__title">
+										Вязальний апарат
+									</div>
+									<div class="main-item__product-id">
+										Код: 5511/007-04-000
+									</div>
+								</div>
+								<div class="main-item__bottom">
+									<div class="main-item__price">500 грн</div>
+									<button class="main-item__btn btn"></button>
+								</div>
+							</div>
+						</div>
+						<div class="main-item">
+							<div class="main-item__img bg-img"
+								style="background-image: url(./images/temp/main-item.jpg)">
+							</div>
+							<div class="main-item__content checked-items__content">
+								<div class="main-item__top">
+									<div class="main-item__title">
+										Вязальний апарат
+									</div>
+									<div class="main-item__product-id">
+										Код: 5511/007-04-000
+									</div>
+								</div>
+								<div class="main-item__bottom">
+									<div class="main-item__price">500 грн</div>
+									<button class="main-item__btn btn"></button>
+								</div>
+							</div>
+						</div>
+						<div class="main-item">
+							<div class="main-item__img bg-img"
+								style="background-image: url(./images/temp/main-item.jpg)">
+							</div>
+							<div class="main-item__content checked-items__content">
+								<div class="main-item__top">
+									<div class="main-item__title">
+										Вязальний апарат
+									</div>
+									<div class="main-item__product-id">
+										Код: 5511/007-04-000
+									</div>
+								</div>
+								<div class="main-item__bottom">
+									<div class="main-item__price">500 грн</div>
+									<button class="main-item__btn btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-border"></div>
+		</section>
 
-</main>
-@@include('./_footer.html')
-@@include('./_popups.html')
+		<section class="partners">
+			<div class="container">
+				<div class="partners__inner">
+					<div class="partners__title title">Наші партнери</div>
+					<div class="partners__box">
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners__item-img bg-img"
+								style="background-image: url(./images/temp/xcase\,P20logo-400x400.png.pagespeed.ic.mwyci5Dyyt.png)">
+							</div>
+							<div class="partners__item-title">john deere</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="new-items">
+			<div class="container">
+				<div class="new-items__inner">
+					<div class="new-items__title title">Останні поступлення</div>
+					<div class="new-items__slider">
+						<div class="main-item">
+							<div class="main-item__img bg-img"
+								style="background-image: url(./images/temp/main-item.jpg)">
+							</div>
+							<div class="main-item__content">
+								<div class="main-item__top">
+									<div class="main-item__title">
+										Вязальний апарат
+									</div>
+									<div class="main-item__product-id">
+										Код: 5511/007-04-000
+									</div>
+								</div>
+								<div class="main-item__bottom">
+									<div class="main-item__price">500 грн</div>
+									<button class="main-item__btn btn"></button>
+								</div>
+							</div>
+						</div>
+						<div class="main-item">
+							<div class="main-item__img bg-img"
+								style="background-image: url(./images/temp/main-item.jpg)">
+							</div>
+							<div class="main-item__content">
+								<div class="main-item__top">
+									<div class="main-item__title">
+										Вязальний апарат
+									</div>
+									<div class="main-item__product-id">
+										Код: 5511/007-04-000
+									</div>
+								</div>
+								<div class="main-item__bottom">
+									<div class="main-item__price">500 грн</div>
+									<button class="main-item__btn btn"></button>
+								</div>
+							</div>
+						</div>
+						<div class="main-item">
+							<div class="main-item__img bg-img"
+								style="background-image: url(./images/temp/main-item.jpg)">
+							</div>
+							<div class="main-item__content">
+								<div class="main-item__top">
+									<div class="main-item__title">
+										Вязальний апарат
+									</div>
+									<div class="main-item__product-id">
+										Код: 5511/007-04-000
+									</div>
+								</div>
+								<div class="main-item__bottom">
+									<div class="main-item__price">500 грн</div>
+									<button class="main-item__btn btn"></button>
+								</div>
+							</div>
+						</div>
+						<div class="main-item">
+							<div class="main-item__img bg-img"
+								style="background-image: url(./images/temp/main-item.jpg)">
+							</div>
+							<div class="main-item__content">
+								<div class="main-item__top">
+									<div class="main-item__title">
+										Вязальний апарат
+									</div>
+									<div class="main-item__product-id">
+										Код: 5511/007-04-000
+									</div>
+								</div>
+								<div class="main-item__bottom">
+									<div class="main-item__price">500 грн</div>
+									<button class="main-item__btn btn"></button>
+								</div>
+							</div>
+						</div>
+						<div class="main-item">
+							<div class="main-item__img bg-img"
+								style="background-image: url(./images/temp/main-item.jpg)">
+							</div>
+							<div class="main-item__content">
+								<div class="main-item__top">
+									<div class="main-item__title">
+										Вязальний апарат
+									</div>
+									<div class="main-item__product-id">
+										Код: 5511/007-04-000
+									</div>
+								</div>
+								<div class="main-item__bottom">
+									<div class="main-item__price">500 грн</div>
+									<button class="main-item__btn btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-@@include('./__scripts.html')
+		<section class="main-slider our-goals bg-img"
+			style="background-image: url(./images/temp/Zugpsitze_mountain.jpg)">
+			<div class="container">
+				<div class="main-slider__box ">
+				</div>
+			</div>
+		</section>
+
+		<section class="news">
+			<div class="container">
+				<div class="news__inner">
+					<div class="news__slider">
+						<div class="news-item">
+							<div class="news-item__left">
+								<div class="news-item__img bg-img"
+									style="background-image: url(./images/temp/news.jpg)"></div>
+							</div>
+							<div class=" news-item__right">
+								<div class="news-item__title">Some news</div>
+								<div class="news-item__content">
+									неметалеві стрижні, що підводять електричний струм до металу, який потрібно
+									зварити.
+									Вони використовуються в якості витратного матеріалу для зварювальних інверторів,
+									трансформаторів і деяких напівавтоматів. На стрижні електродів знаходиться
+									покриття,
+									яке може мати різний склад. Серед найбільш частих варі
+								</div>
+								<button class="news-item__btn btn green-right">View more</button>
+							</div>
+						</div>
+						<div class="news-item">
+							<div class="news-item__left">
+								<div class="news-item__img bg-img"
+									style="background-image: url(./images/temp/news.jpg)"></div>
+							</div>
+							<div class=" news-item__right">
+								<div class="news-item__title">Some news</div>
+								<div class="news-item__content">
+									неметалеві стрижні, що підводять електричний струм до металу, який потрібно
+									зварити.
+									Вони використовуються в якості витратного матеріалу для зварювальних інверторів,
+									трансформаторів і деяких напівавтоматів. На стрижні електродів знаходиться
+									покриття,
+									яке може мати різний склад. Серед найбільш частих варі
+								</div>
+								<button class="news-item__btn btn green-right">View more</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div>
+			<div class="container">
+				<div class="article">
+					<p>Зварювальні електроди — це металеві або неметалеві стрижні, що підводять електричний струм до
+						металу, який
+						потрібно зварити. Вони використовуються в якості витратного матеріалу для зварювальних
+						інверторів,
+						трансформаторів і деяких напівавтоматів. На стрижні електродів знаходиться покриття, яке може
+						мати різний
+						склад. Серед найбільш частих варіантів виділяють основне, рутилове, кисле і целюлозне покриття.
+					</p>
+					<p>Під час зварювання електроди виконують такі функції:</p>
+					<p>подача електрики до деталей, які потрібно з'єднати;</p>
+					<p>підпалювання дуги і управління її положенням;</p>
+					<p>плавлення крайок деталей;</p>
+					<p>створення шва.</p>
+					<p>Покриття електрода може виконувати різні функції:</p>
+					<p>Утворення шлаку навколо металу, що формує шов, а також падаючих зі стрижня електродів крапель.
+					</p>
+					<p>Утворення газу навколо розплавленого металу, захист його від впливу повітря.</p>
+					<p>Легування. У обмазці можуть міститися порошки, які надають шву властивостей, відмінних від
+						властивостей
+						основного металу.</p>
+					<p>Зв'язування і цементування всіх компонентів, які беруть участь у формуванні шва.</p>
+					<p>Маркування конкретного типу електрода, щоб зварювальник міг швидко знайти необхідний витратник.
+					</p>
+					<p>Переваги зварювальних електродів Dnipro-M</p>
+					<p>Зварювальні електроди, які Ви знайдете в цій категорії, мають рутилово-целюлозне покриття. Їм
+						властиві
+						наступні переваги:</p>
+					<p>Використання формули компонентів «Invertor+» дозволяє працювати в будь-якому положенні, навіть
+						якщо потрібно
+						обробляти тонкий матеріал. До того ж, вони можуть використовуватися для роботи в положенні
+						«вертикаль на
+						спуск».</p>
+					<p>Ви зможете легко запалювати дугу як вперше, так і повторно. Електроди забезпечують її стійкість у
+						широкому
+						діапазоні струму.</p>
+					<p>Зварювальні електроди Dnipro-M сприяють формуванню якісного шва і легкому відділенню шлаку.</p>
+					<p>Зварювання можна вести за низьких значень струму, живлячи зварювання від побутових джерел
+						живлення.</p>
+					<p>Електроди не потрібно гартувати перед тим, як почати працювати з ними.</p>
+					<p>Вони добре зварюють навіть брудний та іржавий метал.</p>
+					<p>Електроди Dnipro-M для зварювання мають сертифікати, що підтверджують їхню якість:</p>
+					<p>ТÜVRheinland — сертифікат відповідності контролю якості виробництва на заводі.</p>
+					<p>Bureau Veritas Certification — сертифікат відповідності розробки, виробництва і продажу
+						зварювальних
+						матеріалів.</p>
+					<p>Canadian Welding Bureau — сертифікат відповідності якості зварювальних матеріалів.</p>
+					<p>Сертифікат відповідності директивам Євросоюзу (СЕ).</p>
+				</div>
+			</div>
+		</div>
+
+	</main>
+	@@include('./_footer.html')
+	@@include('./_popups.html')
+
+	@@include('./__scripts.html')
 </body>
+
 </html>
