@@ -102,6 +102,12 @@ body {
 	font-size: 24px;
 	font-weight: 400;
 }
+.title-page {
+	font-size: 27px;
+	font-weight: 400;
+	padding: 20px 40px;
+	border-bottom: 5px solid $second;
+}
 // HEADER START
 
 .header__bottom {
@@ -462,10 +468,7 @@ body {
 .contacts__inner {
 	border: 1px solid $frame;
 }
-.contacts__title {
-	padding: 20px 10px;
-	border-bottom: 5px solid $second;
-}
+
 .contact__map {
 	padding: 20px;
 	width: 100%;
@@ -496,6 +499,28 @@ body {
 	}
 }
 // CONTACTS END
+// ABOUT START
+.about {
+	margin: 100px 0;
+}
+
+.about__inner {
+	border: 1px solid $frame;
+}
+
+.about__content {
+	padding: 20px;
+}
+.about__paragraph {
+	margin-bottom: 10px;
+}
+.about__img-frame {
+	padding: 0 20px 20px;
+}
+.about__img {
+	height: 600px;
+}
+// ABOUT END
 // START
 
 // END
