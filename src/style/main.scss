@@ -470,16 +470,16 @@ body {
 }
 
 .contact__map {
-	padding: 20px;
+	padding: 20px 20px 10px;
 	width: 100%;
 	height: 500px;
 	border: 0;
-	border-bottom: 1px solid $frame;
-	margin-bottom: 20px;
 }
 .contact__content {
 	display: flex;
+	padding-top: 20px;
 	padding-bottom: 20px;
+	background-color: $light;
 }
 .contact__content-column {
 	margin-left: 50px;
