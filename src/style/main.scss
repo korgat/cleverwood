@@ -85,10 +85,22 @@ body {
 		border-radius: 50%;
 	}
 }
+.underline {
+	position: relative;
+	&::after {
+		position: absolute;
+		content: "";
+		bottom: 0;
+		left: 0;
+		height: 3px;
+		width: 50px;
+		background-color: $second;
+	}
+}
 
 .title {
-	font-size: 50px;
-	margin-left: 30px;
+	font-size: 24px;
+	font-weight: 400;
 }
 // HEADER START
 
@@ -377,7 +389,6 @@ body {
 }
 .advantages__paragraph {
 	color: $light-text;
-
 	margin-bottom: 7px;
 }
 .advantages__list {
@@ -418,16 +429,6 @@ body {
 	padding-bottom: 15px;
 	margin-bottom: 25px;
 	font-size: 24px;
-	position: relative;
-	&::before {
-		position: absolute;
-		content: "";
-		bottom: 0;
-		left: 0;
-		height: 3px;
-		width: 70px;
-		background-color: $second;
-	}
 }
 .footer__text {
 	margin-bottom: 20px;
@@ -453,5 +454,48 @@ body {
 	padding: 15px;
 }
 // FOOTER END
+
+// CONTACTS START
+.contacts {
+	margin: 100px 0;
+}
+.contacts__inner {
+	border: 1px solid $frame;
+}
+.contacts__title {
+	padding: 20px 10px;
+	border-bottom: 5px solid $second;
+}
+.contact__map {
+	padding: 20px;
+	width: 100%;
+	height: 500px;
+	border: 0;
+	border-bottom: 1px solid $frame;
+	margin-bottom: 20px;
+}
+.contact__content {
+	display: flex;
+	padding-bottom: 20px;
+}
+.contact__content-column {
+	margin-left: 50px;
+}
+.contact__content-adress {
+	max-width: 300px;
+}
+.contact__content-title {
+	padding-left: 40px;
+	padding-bottom: 8px;
+	margin-bottom: 15px;
+}
+.contact__content-text {
+	color: $light-text;
+	& + .contact__content-text {
+		margin-top: 5px;
+	}
+}
+// CONTACTS END
 // START
+
 // END
