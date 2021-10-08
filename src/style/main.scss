@@ -35,6 +35,32 @@ body {
 		margin-top: auto;
 	}
 }
+// BREADCRUMBS
+.breadcrumbs {
+	padding: 20px 0px;
+}
+.breadcrumbs__list {
+}
+.breadcrumbs__item {
+	display: inline-block;
+	font-size: 12px;
+	color: $primary;
+	margin-right: 5px;
+	& + .breadcrumbs__item {
+		padding-left: 15px;
+		position: relative;
+		color: $gray;
+		&::before {
+			content: "/";
+			position: absolute;
+			left: 0;
+		}
+	}
+}
+.breadcrumbs__link {
+	text-decoration: none;
+}
+// BREADCRUMBS
 .title-medium {
 	font-size: 20px;
 }
@@ -463,7 +489,7 @@ body {
 
 // CONTACTS START
 .contacts {
-	margin: 100px 0;
+	margin-bottom: 100px;
 }
 .contacts__inner {
 	border: 1px solid $frame;
@@ -479,6 +505,7 @@ body {
 	display: flex;
 	padding-top: 20px;
 	padding-bottom: 20px;
+
 	background-color: $light;
 }
 .contact__content-column {
@@ -501,7 +528,7 @@ body {
 // CONTACTS END
 // ABOUT START
 .about {
-	margin: 100px 0;
+	margin-bottom: 100px;
 }
 
 .about__inner {
@@ -521,6 +548,89 @@ body {
 	height: 600px;
 }
 // ABOUT END
+
+// CATALOG START
+.catalog {
+	padding: 0px 0px 100px 0px;
+}
+.container {
+}
+.catalog__inner {
+}
+.catlog__title {
+	margin-bottom: 30px;
+}
+.catalog__box {
+	display: flex;
+}
+.catalog__aside {
+	width: 270px;
+	height: 100%;
+	padding: 20px;
+	border: 1px solid #dddddd;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.catalog__categories {
+}
+.catalog__category {
+	font-size: 14px;
+	& + .catalog__category {
+		margin-top: 10px;
+	}
+}
+.catalog__category--active {
+	color: $second;
+}
+.catalog__main {
+	width: 100%;
+	margin-left: 30px;
+}
+.catalog__filter {
+	margin-bottom: 25px;
+	color: $gray;
+}
+.catalog__sort {
+}
+.catalog__sort-title {
+	font-size: 12px;
+}
+.catalog__sort-select {
+	margin-left: 10px;
+}
+.catalog__items {
+	margin-left: -30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.catalog__item {
+	width: calc(25% - 30px);
+	margin-bottom: 30px;
+}
+.main-item__img {
+}
+.bg-img {
+}
+.main-item__content {
+}
+.checked-items__content {
+}
+.main-item__top {
+}
+.main-item__title {
+}
+.main-item__product-id {
+}
+.main-item__bottom {
+}
+.main-item__price {
+}
+.main-item__btn {
+}
+.btn {
+}
+// CATALOG END
+
 // START
 
 // END

@@ -1,19 +1,154 @@
 <!doctype html>
 <html lang="ru">
 @@include('./__head.html', {'title': 'Каталог'})
+
 <body class="page">
 
-@@include('./_header.html')
-<main class="page__main">
+	@@include('./_header.html')
+	<main class="page__main">
+		<div class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="#">Головна</a>
+					</li>
+					<li class="breadcrumbs__item">Каталог</li>
+				</ul>
+			</div>
+		</div>
+		<div class="catalog">
+			<div class="container">
+				<div class="catalog__inner">
+					<div class="catlog__title title-page">Catalog</div>
+					<div class="catalog__box">
+						<div class="catalog__aside">
+							<ul class="catalog__categories">
+								<li class="catalog__category catalog__category--active">Категорія 1</li>
+								<li class="catalog__category">Категорія 1</li>
+								<li class="catalog__category">Категорія 1</li>
+								<li class="catalog__category">Категорія 1</li>
+								<li class="catalog__category">Категорія 1</li>
+							</ul>
+						</div>
+						<div class="catalog__main">
+							<div class="catalog__filter">
+								<div class="catalog__sort">
+									<span class="catalog__sort-title">Сортувати</span>
+									<select class="catalog__sort-select" name="" id="">
+										<option value="">По зростанню ціни</option>
+										<option value="">По зростанню ціни</option>
+										<option value="">По зростанню ціни</option>
+									</select>
+								</div>
+							</div>
+							<div class="catalog__items">
+								<div class="main-item catalog__item">
+									<div class="main-item__img bg-img"
+										style="background-image: url(./images/temp/main-item.jpg)">
+									</div>
+									<div class="main-item__content checked-items__content">
+										<div class="main-item__top">
+											<div class="main-item__title">
+												Вязальний апарат
+											</div>
+											<div class="main-item__product-id">
+												Код: 5511/007-04-000
+											</div>
+										</div>
+										<div class="main-item__bottom">
+											<div class="main-item__price">500 грн</div>
+											<button class="main-item__btn btn"></button>
+										</div>
+									</div>
+								</div>
+								<div class="main-item catalog__item">
+									<div class="main-item__img bg-img"
+										style="background-image: url(./images/temp/main-item.jpg)">
+									</div>
+									<div class="main-item__content checked-items__content">
+										<div class="main-item__top">
+											<div class="main-item__title">
+												Вязальний апарат
+											</div>
+											<div class="main-item__product-id">
+												Код: 5511/007-04-000
+											</div>
+										</div>
+										<div class="main-item__bottom">
+											<div class="main-item__price">500 грн</div>
+											<button class="main-item__btn btn"></button>
+										</div>
+									</div>
+								</div>
+								<div class="main-item catalog__item">
+									<div class="main-item__img bg-img"
+										style="background-image: url(./images/temp/main-item.jpg)">
+									</div>
+									<div class="main-item__content checked-items__content">
+										<div class="main-item__top">
+											<div class="main-item__title">
+												Вязальний апарат
+											</div>
+											<div class="main-item__product-id">
+												Код: 5511/007-04-000
+											</div>
+										</div>
+										<div class="main-item__bottom">
+											<div class="main-item__price">500 грн</div>
+											<button class="main-item__btn btn"></button>
+										</div>
+									</div>
+								</div>
+								<div class="main-item catalog__item">
+									<div class="main-item__img bg-img"
+										style="background-image: url(./images/temp/main-item.jpg)">
+									</div>
+									<div class="main-item__content checked-items__content">
+										<div class="main-item__top">
+											<div class="main-item__title">
+												Вязальний апарат
+											</div>
+											<div class="main-item__product-id">
+												Код: 5511/007-04-000
+											</div>
+										</div>
+										<div class="main-item__bottom">
+											<div class="main-item__price">500 грн</div>
+											<button class="main-item__btn btn"></button>
+										</div>
+									</div>
+								</div>
+								<div class="main-item catalog__item">
+									<div class="main-item__img bg-img"
+										style="background-image: url(./images/temp/main-item.jpg)">
+									</div>
+									<div class="main-item__content checked-items__content">
+										<div class="main-item__top">
+											<div class="main-item__title">
+												Вязальний апарат
+											</div>
+											<div class="main-item__product-id">
+												Код: 5511/007-04-000
+											</div>
+										</div>
+										<div class="main-item__bottom">
+											<div class="main-item__price">500 грн</div>
+											<button class="main-item__btn btn"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <div class="container">
-        <h1>Каталог</h1>
-    </div>
+	</main>
+	@@include('./_footer.html')
+	@@include('./_popups.html')
 
-</main>
-@@include('./_footer.html')
-@@include('./_popups.html')
-
-@@include('./__scripts.html')
+	@@include('./__scripts.html')
 </body>
+
 </html>
